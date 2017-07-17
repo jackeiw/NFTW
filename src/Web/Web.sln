@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Tests", "Web.Tests\Web.Tests.csproj", "{F2383584-7B4D-4D5F-A764-A4748205F45A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTW", "NFTW\NFTW.csproj", "{0197C210-F609-4628-A635-B061F8D174CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{F2383584-7B4D-4D5F-A764-A4748205F45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2383584-7B4D-4D5F-A764-A4748205F45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2383584-7B4D-4D5F-A764-A4748205F45A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0197C210-F609-4628-A635-B061F8D174CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0197C210-F609-4628-A635-B061F8D174CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0197C210-F609-4628-A635-B061F8D174CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0197C210-F609-4628-A635-B061F8D174CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
