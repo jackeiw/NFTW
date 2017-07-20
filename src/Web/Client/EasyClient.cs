@@ -67,9 +67,8 @@ namespace Client
                     Console.ReadKey();
                     return;
                 }
-                stream = client.GetStream();//获取网络流 
-
-                //stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
+                stream = client.GetStream();//获取网络流
+                
                 FileStream fileStream = new FileStream(string.Format(AppDomain.CurrentDomain.BaseDirectory + "fly.rar"), FileMode.Open, FileAccess.Read);
                 sendData = new byte[fileStream.Length];
                 int blockSize = 10240;

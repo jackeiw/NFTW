@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -49,10 +50,12 @@ namespace Server
             listener.Start();//开始监听 
             Console.WriteLine("开始监听！");
             while (true)
-            {                
+            {
+                Stopwatch watch = new Stopwatch();
                 client = listener.AcceptTcpClient();//接受一个Client 
                 if (client.Connected)
                 {
+                    watch.Start();
                     int size = 0;
                     int len = 0;                   
                     stream = client.GetStream();//获取网络流 
@@ -73,7 +76,8 @@ namespace Server
                         fs.Close();
                         stream.Close();//关闭流 
                         client.Close();//关闭Client 
-                        Console.WriteLine("文件接受成功!");
+                        watch.Stop();
+                        Console.WriteLine("文件接受成功!传输用时：{0}毫秒。", watch.ElapsedMilliseconds);
                     }
                 }         
             }
