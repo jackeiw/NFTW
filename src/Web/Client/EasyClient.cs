@@ -24,7 +24,7 @@ namespace Client
             while (true)//死循环 
             {
                 sendString = Console.ReadLine();//获取要发送的字符串 
-                sendData = Encoding.Default.GetBytes(sendString);//获取要发送的字节数组 
+
                 client = new TcpClient();//实例化TcpClient 
                 try
                 {
@@ -36,24 +36,40 @@ namespace Client
                     Console.ReadKey();
                     return;
                 }
-                stream = client.GetStream();//获取网络流 
-                stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
+
+                if (client.Connected)
+                {
+                    Console.WriteLine("建立连接！");
+                    //发送数据
+                    sendData = Encoding.Default.GetBytes(sendString);//获取要发送的字节数组 
+                    stream = client.GetStream();//获取网络流 
+                    stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
 
 
-                //###################################################
-                //读取数据
-                byte[] buffer = null;
-                buffer = new byte[client.ReceiveBufferSize];
-                stream = client.GetStream();//获取网络流 
-                stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据
-                string receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
-                Console.WriteLine(receiveString);
+                    //###################################################
+                    //读取数据
+                    byte[] buffer = null;
+                    buffer = new byte[client.ReceiveBufferSize];
+                    stream = client.GetStream();//获取网络流 
+                    stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据
+                    string receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
+                    Console.WriteLine(receiveString);
 
-                //###################################################
+                    //读取数据
+                    if ("StartSendFile" == receiveString)
+                    {
+                        sendString = "我发文件了";
+                        sendData = Encoding.Default.GetBytes(sendString);//获取要发送的字节数组 
+                        stream = client.GetStream();//获取网络流 
+                        stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
+                    }
+
+                    //###################################################
 
 
-                stream.Close();//关闭网络流 
-                client.Close();//关闭客户端 
+                    stream.Close();//关闭网络流 
+                    client.Close();//关闭客户端 
+                }
             } 
         }
 
