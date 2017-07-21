@@ -11,8 +11,8 @@ namespace Server
         static void Main(string[] args)
         {
             EasyServer server = new EasyServer();
-            //server.ListenTcp();
-            server.ListenTcpGetFile();
+            server.ListenTcp();
+            //server.ListenTcpGetFile();
         }
     }
 }

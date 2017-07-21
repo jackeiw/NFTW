@@ -11,8 +11,8 @@ namespace Client
         static void Main(string[] args)
         {
             EasyClient client = new EasyClient();
-            //client.ConnectTcp();
-            client.ConnectTcpSendFile();
+            client.ConnectTcp();
+            //client.ConnectTcpSendFile();
         }
     }
 }

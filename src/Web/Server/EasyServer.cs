@@ -27,14 +27,28 @@ namespace Server
             while (true)
             {
                 client = listener.AcceptTcpClient();//接受一个Client 
+                /**/
                 buffer = new byte[client.ReceiveBufferSize];
                 stream = client.GetStream();//获取网络流 
-                stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据 
+                stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据
+                receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
+                Console.WriteLine(receiveString);
+
+                //###################################################
+                //发送数据
+                string sendString = null;//要发送的字符串 
+                byte[] sendData = null;//要发送的字节数组 
+                sendString = "已收到您的信息！";//获取要发送的字符串 
+                sendData = Encoding.Default.GetBytes(sendString);//获取要发送的字节数组
+                stream = client.GetStream();//获取网络流 
+                stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
+
+                //###################################################
+
+
                 stream.Close();//关闭流 
                 client.Close();//关闭Client 
 
-                receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
-                Console.WriteLine(receiveString);
             }
         }
 

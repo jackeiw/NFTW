@@ -38,7 +38,19 @@ namespace Client
                 }
                 stream = client.GetStream();//获取网络流 
                 stream.Write(sendData, 0, sendData.Length);//将数据写入网络流
-                
+
+
+                //###################################################
+                //读取数据
+                byte[] buffer = null;
+                buffer = new byte[client.ReceiveBufferSize];
+                stream = client.GetStream();//获取网络流 
+                stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据
+                string receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
+                Console.WriteLine(receiveString);
+
+                //###################################################
+
 
                 stream.Close();//关闭网络流 
                 client.Close();//关闭客户端 
