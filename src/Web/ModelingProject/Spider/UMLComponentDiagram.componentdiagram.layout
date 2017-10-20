@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram">
+  <componentModelMoniker Id="4e71a1e4-b9f9-4c8d-a925-ec0ea17361ac" />
+  <nestedChildShapes>
+    <componentShape Id="807fe32b-d1c8-4396-bfab-d110c87c81d2" absoluteBounds="2.25, 2.625, 1.8645833333333339, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="5365b3d1-23de-4840-a84b-c8ca1f748590" LastKnownName="数据存储" />
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>
