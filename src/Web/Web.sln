@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CordSpider", "CordSpider\Co
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "ModelingProject\ModelingProject.modelproj", "{4CD67CD7-6576-4BDB-B5B9-316E71B1726B}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{12E4541C-3B61-405F-B3DB-9B08971B4E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,12 @@ Global
 		{4CD67CD7-6576-4BDB-B5B9-316E71B1726B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD67CD7-6576-4BDB-B5B9-316E71B1726B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD67CD7-6576-4BDB-B5B9-316E71B1726B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +94,6 @@ Global
 		{6A35CE7C-07E0-4067-8290-12A950F204FA} = {89556544-83E8-4F4C-990E-3C806C57EAA6}
 		{C6F61971-1196-42E9-85E7-AB17BE548FDA} = {89556544-83E8-4F4C-990E-3C806C57EAA6}
 		{BE535D5A-183C-4C71-AA01-AD9D507CD7D3} = {2E040213-F785-466B-8615-DB06E10C1B26}
+		{12E4541C-3B61-405F-B3DB-9B08971B4E81} = {2E040213-F785-466B-8615-DB06E10C1B26}
 	EndGlobalSection
 EndGlobal
