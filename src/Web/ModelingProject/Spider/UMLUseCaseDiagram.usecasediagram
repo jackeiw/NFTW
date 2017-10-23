@@ -1,22 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a7ac2969-fba8-4d15-9f99-ed8c9a2f12d2" name="UMLUseCaseDiagram" linkedPackageId="0ce0c969-284b-42a0-b48b-af59231e51f0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="2ab7d11d-56ad-4044-911d-5cf4b0e13f95">
-      <profileInstance Id="fe730323-5847-4446-b895-f8a1e88f79e6" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b7ceea64-5f1a-4588-a4a6-e4e8577da81b">
-      <profileInstance Id="d7137f92-0b55-482c-8d4a-9b4ab13ea343" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="a7ac2969-fba8-4d15-9f99-ed8c9a2f12d2" name="UMLUseCaseDiagram" linkedPackageId="0ce0c969-284b-42a0-b48b-af59231e51f0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="efd5b502-8a71-4ad3-9b1b-d394bf1bb9dc" name="Actor1" isAbstract="false" isLeaf="false">
+      <actor Id="efd5b502-8a71-4ad3-9b1b-d394bf1bb9dc" name="使用者" isAbstract="false" isLeaf="false">
         <elementDefinition Id="68ba4121-3659-43c9-8235-7633ed3668fb" />
         <targetEnds>
           <association Id="53406be7-9324-4b9f-9002-d8ee3652c7ed" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="控制任务" isLeaf="false" isAbstract="false">
@@ -36,7 +22,7 @@
             <elementDefinition Id="b8132b2b-10d3-4fa1-836e-7144f5b582b4" />
           </association>
           <association Id="d6bf8652-fbff-4c3c-be35-f986287c1e30" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="96db555f-7bfe-4078-9b8d-861f51ba92b1" LastKnownName="UseCase2" />
+            <useCaseMoniker Id="96db555f-7bfe-4078-9b8d-861f51ba92b1" LastKnownName="查看信息" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="eda42166-f629-44f2-bd57-ca5a7e305377" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -57,10 +43,44 @@
     <useCaseModelRootHasTypes>
       <useCase Id="ae219826-773c-47ac-ba44-61f36f3b6019" name="控制任务" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1e9f1202-4a18-4660-9227-30fab0c8f513" />
+        <targetEnds>
+          <association Id="3285c23c-4fcf-4ec4-8f3d-ce11f6d541c4" isDerived="false" sourceEndRoleName="控制任务" targetEndRoleName="启动" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bd700e13-3f57-4697-aaca-3b67b9b841ad" LastKnownName="启动" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d59cad9-8fda-4f93-81f6-befcfaa5e77d" name="控制任务" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8b6509d-69d6-4f17-bb3b-0f5a3d7a6340" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4518aabf-26a6-4545-adf4-f730ec2cd826" name="启动" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b755d06a-240e-4b08-99ca-7a8ca368567f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ce0b0e4-0583-48d1-8357-528d18ca251a" />
+          </association>
+          <association Id="e2eec377-6cc7-4730-a4b5-99f6902d707d" isDerived="false" sourceEndRoleName="控制任务" targetEndRoleName="暂停" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e5b73c9f-0db7-46a1-be97-006a47db6599" LastKnownName="暂停" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="682080d5-07d9-49d9-bc12-1d72ddbdee69" name="控制任务" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="70c7e82f-e0ca-4d18-b33b-b086d0feebbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d5c29ad-5083-4b54-8f16-5451e0e12d1c" name="暂停" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01b9025a-1994-4b36-a470-56678091b30b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="218b8b69-c8a0-44a1-b204-81c4ece5740f" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="96db555f-7bfe-4078-9b8d-861f51ba92b1" name="UseCase2" isAbstract="false" isLeaf="false">
+      <useCase Id="96db555f-7bfe-4078-9b8d-861f51ba92b1" name="查看信息" isAbstract="false" isLeaf="false">
         <elementDefinition Id="782f0b5a-eae9-4067-baa0-ed578f6b8af1" />
       </useCase>
     </useCaseModelRootHasTypes>
@@ -77,5 +97,19 @@
   </packagedElements>
   <package Id="0ce0c969-284b-42a0-b48b-af59231e51f0" name="ModelingProject">
     <elementDefinition Id="a2b92979-410c-4471-9818-7d38d5cad767" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2ab7d11d-56ad-4044-911d-5cf4b0e13f95">
+        <profileInstance Id="fe730323-5847-4446-b895-f8a1e88f79e6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b7ceea64-5f1a-4588-a4a6-e4e8577da81b">
+        <profileInstance Id="d7137f92-0b55-482c-8d4a-9b4ab13ea343" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
