@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="4e71a1e4-b9f9-4c8d-a925-ec0ea17361ac" name="UMLComponentDiagram" linkedPackageId="f6f8427a-6e06-41af-8937-415de9ab7267" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0749d2d9-2146-431d-a434-bf41276c72ec">
+      <profileInstance Id="885871de-2c3a-491d-ae70-850ace6f60b5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="54ea70e4-0278-4f39-b6a8-60a3cfc54c82">
+      <profileInstance Id="38e3fd96-8273-4e2d-924d-076009c8d9b9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="5365b3d1-23de-4840-a84b-c8ca1f748590" name="数据存储" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eef4f9e8-ed3a-4dc6-a3a6-4a786ea63816" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="f6f8427a-6e06-41af-8937-415de9ab7267" name="ModelingProject">
+    <elementDefinition Id="a2b92979-410c-4471-9818-7d38d5cad767" />
+  </package>
+</componentModel>

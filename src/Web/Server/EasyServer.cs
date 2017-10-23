@@ -27,7 +27,7 @@ namespace Server
             while (true)
             {
                 client = listener.AcceptTcpClient();//接受一个Client 
-                /*接受数据*/
+                /*接收数据*/
                 buffer = new byte[client.ReceiveBufferSize];
                 stream = client.GetStream();//获取网络流 
                 stream.Read(buffer, 0, buffer.Length);//读取网络流中的数据

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5739879e-0f76-4853-9f44-aa4f853363a0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="a4184682-ce3b-4954-99b6-86cb5aeb81f5" name="Spider" />
+    <layer Id="027ffcbf-672f-4faf-9e17-d50ec5ef4c4d" name="数据层">
+      <childLayers>
+        <layer Id="9124e9c3-d357-442c-a2ec-1af07fb03484" name="索引库" />
+        <layer Id="44e54eeb-3ab4-4147-87f6-9866474b5909" name="原文" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

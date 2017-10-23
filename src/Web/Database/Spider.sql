@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Spider]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)
