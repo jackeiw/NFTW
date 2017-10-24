@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="(@1 @3 Type=Program Member=(Name=Main OverloadingParameters=[(@6 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Category="CodeSchema_Method" Bounds="30.8350000000001,2.26000000000003,64.9433333333333,25.24" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsStatic="True" DelayedCrossGroupLinksState="Fetched" Label="Main" />
-    <Node Id="(@1 @3 Type=Program Member=.ctor)" Category="CodeSchema_Method" Bounds="30.8350000000001,57.5,85.6933333333333,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Program" />
-    <Node Id="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Category="Category1" Bounds="-217.073193846961,1.51169149180522,68,25.24" Label="新建节点" UseManualLocation="True">
+    <Node Id="(@1 @3 Type=Program Member=(Name=Main OverloadingParameters=[(@6 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Category="CodeSchema_Method" Bounds="-287.623387726765,-47.7918115316863,64.9433333333333,25.24" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsStatic="True" DelayedCrossGroupLinksState="Fetched" Label="Main" />
+    <Node Id="(@1 @3 Type=Program Member=.ctor)" Category="CodeSchema_Method" Bounds="-287.623387726765,7.44818846831373,85.6933333333333,25.24" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Program" />
+    <Node Id="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Category="Category1" Bounds="-111.929954393432,-50.158659068106,68,25.24" Label="新建节点" UseManualLocation="True">
       <Category Ref="Category2" />
     </Node>
-    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-140,-96,147.363333333333,25" CodeSchemaProperty_StrongName="CordSpider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(be535d5a-183c-4c71-aa01-ad9d507cd7d3.OutputPath)" Group="Collapsed" Label="CordSpider.exe" UseManualLocation="True">
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-347.623387726765,-167.791811531686,205.693333333333,260.48" CodeSchemaProperty_StrongName="CordSpider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(be535d5a-183c-4c71-aa01-ad9d507cd7d3.OutputPath)" Group="Expanded" Label="CordSpider.exe" UseManualLocation="True">
       <Category Ref="Category1" />
     </Node>
-    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="-9.16499999999991,-77.74,165.693333333333,200.48" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="CordSpider" UseManualLocation="True" />
-    <Node Id="@5" Category="CodeSchema_Class" Bounds="10.8350000000001,-37.74,125.693333333333,140.48" CodeSchemaProperty_IsInternal="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="2" Group="Expanded" Label="Program" UseManualLocation="True" />
-    <Node Id="ee54330a-3898-47a3-ace2-d08117ef93f21" Category="Comment" Bounds="-506.938636,-55.8782623843691,56,25.24" Label="新注释" UseManualLocation="True" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="-327.623387726765,-127.791811531686,165.693333333333,200.48" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="CordSpider" />
+    <Node Id="@5" Category="CodeSchema_Class" Bounds="-307.623387726765,-87.7918115316863,125.693333333333,140.48" CodeSchemaProperty_IsInternal="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="2" Group="Expanded" Label="Program" />
+    <Node Id="ee54330a-3898-47a3-ace2-d08117ef93f21" Category="Comment" Bounds="-433.623487726765,-50.1561002927715,56,25.24" Label="新注释" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="@2" Target="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Bounds="-161.077097407281,-71,79.8103827223571,66.7383150432747" />
+    <Link Source="@2" Target="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Bounds="-141.930054393432,-37.5437041702749,21.0001000279635,0.00165542944773733" />
     <Link Source="@2" Target="@4" Category="Contains" FetchingParent="@2" />
     <Link Source="@4" Target="@5" Category="Contains" FetchingParent="@4" />
     <Link Source="@5" Target="(@1 @3 Type=Program Member=(Name=Main OverloadingParameters=[(@6 Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]))" Category="Contains" FetchingParent="@5" />
     <Link Source="@5" Target="(@1 @3 Type=Program Member=.ctor)" Category="Contains" FetchingParent="@5" />
-    <Link Source="ee54330a-3898-47a3-ace2-d08117ef93f21" Target="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Bounds="-450.938629150391,-37.8270132240896,225.030117546379,43.649802806886" />
+    <Link Source="ee54330a-3898-47a3-ace2-d08117ef93f21" Target="3bcd2b04-23a3-460e-b0c4-2e0356e785731" Bounds="-401.320709228516,-177.926025390625,315.32445526123,127.769924163818" />
   </Links>
   <Categories>
     <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
@@ -57,7 +57,7 @@
     <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
     <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
     <Property Id="GroupLabel" DataType="System.String" />
-    <Property Id="Icon" DataType="System.String" />
+    <Property Id="Icon" Label="图标" Description="图标" DataType="System.String" />
     <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
     <Property Id="IsContainment" DataType="System.Boolean" />
     <Property Id="IsEnabled" DataType="System.Boolean" />
@@ -111,6 +111,7 @@
   <Paths>
     <Path Id="be535d5a-183c-4c71-aa01-ad9d507cd7d3.OutputPath" Value="D:\Source\git\NFTW\src\Web\CordSpider\bin\Debug\CordSpider.exe" />
     <Path Id="be535d5a-183c-4c71-aa01-ad9d507cd7d3.OutputPathUri" Value="file:///D:/Source/git/NFTW/src/Web/CordSpider/bin/Debug/CordSpider.exe" />
+    <Path Id="FxReferenceAssemblies" Value="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework" />
     <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
   </Paths>
 </DirectedGraph>

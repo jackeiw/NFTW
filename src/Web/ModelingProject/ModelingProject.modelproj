@@ -22,9 +22,6 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Spider\Graph.dgml">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Spider\UMLActivityDiagram.activitydiagram">
       <SubType>Content</SubType>
     </Content>
