@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace CommonSocket
 {
     /// <summary>
-    /// 
+    /// https://msdn.microsoft.com/zh-cn/library/system.net.sockets.socketasynceventargs(v=vs.110).aspx
     /// </summary>
     public class Server
     {
