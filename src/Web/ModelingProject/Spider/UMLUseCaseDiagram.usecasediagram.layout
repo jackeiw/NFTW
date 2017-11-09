@@ -18,11 +18,11 @@
         <useCaseShapeMoniker Id="20f9289b-9258-4792-98b6-d6f3c0c7689a" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseShape Id="50d6998c-ebdb-46f6-bd11-63d42a378e6f" absoluteBounds="2.625, 3.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+    <useCaseShape Id="50d6998c-ebdb-46f6-bd11-63d42a378e6f" absoluteBounds="2.625, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="96db555f-7bfe-4078-9b8d-861f51ba92b1" LastKnownName="查看信息" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.75 : 2.75961538461538); (2.78477445031636 : 3.31680162709343)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.75 : 2.74038461538462); (2.75759827768626 : 3.20542997431673)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="d6bf8652-fbff-4c3c-be35-f986287c1e30" />
       <relativeChildShapes />
       <nodes>
